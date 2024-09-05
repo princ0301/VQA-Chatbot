@@ -1,0 +1,7 @@
+Flask==3.0.3
+torch==2.4.1
+transformers==4.44.2
+requests==2.32.3
+Pillow==10.4.0
+Werkzeug==3.0.4
+torchvision==0.19.1

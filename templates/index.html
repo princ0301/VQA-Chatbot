@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Question Answering</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ask a Question about the Image</h1>
+
+        <!-- Image preview -->
+        <img id="image-preview" src="" alt="Image will be displayed here" />
+
+        <!-- Upload form -->
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="image-upload" name="image" accept="image/*" required><br><br>
+            <input type="text" id="question" name="question" placeholder="Enter your question" required><br><br>
+            <button type="submit">Ask Question</button>
+        </form>
+
+        <div id="answer"></div>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
